@@ -90,25 +90,6 @@ From that point on, everything works from localStorage. So even if you're offlin
 
 All prices are automatically converted from USD to INR using an exchange rate of 1 USD = 83.5 INR. They're also formatted properly with the rupee symbol (₹) and Indian number formatting, so ₹12,345.50 instead of $147.89.
 
-## Project Structure
-
-Here's how the code is organized:
-
-# 📁 Folder Structure
-src/
-├── components/
-│   ├── ProductCard.jsx
-│   ├── ProductModal.jsx
-│   ├── EditProductForm.jsx
-│   ├── DeleteConfirmation.jsx
-│   └── Loader.jsx
-├── pages/
-│   ├── Login.jsx
-│   └── Products.jsx
-├── context/
-│   └── AuthContext.jsx
-└── App.jsx
-
 ## Things I Learned Building This
 
 - **localStorage is awesome** for small apps - no database needed!
