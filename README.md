@@ -1,8 +1,6 @@
-# Product Catalog App
+# FakeApi - Ecommerce 
+Hey there! This is a  FakeApi - Ecommerce  application where you can browse, edit, and manage products. I built this using React and some cool modern tools to make it fast and user-friendly.
 
-Hey there! This is a product catalog application where you can browse, edit, and manage products. I built this using React and some cool modern tools to make it fast and user-friendly.
-
-## What Can You Do With This?
 
 When you open the app, you'll be able to:
 
@@ -15,8 +13,6 @@ When you open the app, you'll be able to:
 - **Delete products** - with a confirmation popup so you don't accidentally remove something
 - **Everything saves automatically** - your changes stick around even if you refresh the page
 
-## What's Under the Hood?
-
 I used these technologies to build this:
 
 - **React 18** - for building the user interface
@@ -24,32 +20,6 @@ I used these technologies to build this:
 - **Tailwind CSS** - for styling (makes it look good without writing tons of CSS)
 - **Lucide React** - for all the icons you see
 - **Vite** - super fast build tool and development server
-
-## How to Run This Locally
-
-You'll need Node.js installed on your computer (version 16 or newer).
-
-### Step 1: Install Everything
-
-Open your terminal in the project folder and run:
-
-npm install
-
-This downloads all the necessary packages.
-
-### Step 2: Start the Development Server
-
-npm run dev
-
-The app will open in your browser (usually at http://localhost:5173).
-
-### Step 3: Build for Production 
-
-If you want to create a production-ready version:
-
-npm run build
-
-## How to Use the App
 
 ### Logging In
 
@@ -124,14 +94,20 @@ All prices are automatically converted from USD to INR using an exchange rate of
 
 Here's how the code is organized:
 
+# 📁 Folder Structure
 src/
-├── components/         All the React components (login, product cards, modals, etc.)
-├── contexts/          Authentication logic
-├── store/             Redux store and API configuration
-├── utils/             Helper functions (like price formatting)
-├── App.jsx            Main app component
-└── main.jsx           Entry point where everything starts
-
+├── components/
+│   ├── ProductCard.jsx
+│   ├── ProductModal.jsx
+│   ├── EditProductForm.jsx
+│   ├── DeleteConfirmation.jsx
+│   └── Loader.jsx
+├── pages/
+│   ├── Login.jsx
+│   └── Products.jsx
+├── context/
+│   └── AuthContext.jsx
+└── App.jsx
 
 ## Things I Learned Building This
 
